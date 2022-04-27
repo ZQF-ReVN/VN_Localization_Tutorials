@@ -1,5 +1,5 @@
 #include <windows.h>
-STARTUPINFO si;
+STARTUPINFOW si;
 PROCESS_INFORMATION pi;
 
 
