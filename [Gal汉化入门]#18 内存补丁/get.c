@@ -34,7 +34,7 @@ DWORD GetImageBase()
 	return dwImageBase;
 }
 
-void WriteMemory(LPVOID lpAddress, LPCVOID lpBuffer, SIZE_T nSize)
+VOID WriteMemory(LPVOID lpAddress, LPCVOID lpBuffer, SIZE_T nSize)
 {
 	DWORD oldProtect;
 
@@ -48,7 +48,7 @@ void WriteMemory(LPVOID lpAddress, LPCVOID lpBuffer, SIZE_T nSize)
 	}
 }
 
-void ReadMemory(LPCVOID lpAddress, LPVOID lpBuffer, SIZE_T nSize)
+VOID ReadMemory(LPCVOID lpAddress, LPVOID lpBuffer, SIZE_T nSize)
 {
 
 	if (!ReadProcessMemory(pi.hProcess, lpAddress, lpBuffer, nSize, NULL))
@@ -72,7 +72,7 @@ BOOL CmpMemory(LPCVOID Buffer1, LPCVOID Buffer2, SIZE_T nSize)
 }
 
 
-int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+INT APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	if (!GetStart(L"SiglusEngine.exe"))
 	{
