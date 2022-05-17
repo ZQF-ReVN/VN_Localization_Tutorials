@@ -1,0 +1,49 @@
+关键位置
+
+序列号验证：
+sub_00000C7D:
+00000C7D    getsp
+00000C7E    push 350
+00000C81    add
+00000C82    setsp
+00000C83    lea var350
+00000C86    storevp dword
+00000C88    lea var34C
+00000C8B    push 0
+00000C8D    storepv dword
+00000C8F    push 0
+00000C91    jnz 00000D57  //jmp
+
+ImaImo校验:
+00000441    push 0
+00000443    getstring "ImaImo"      // 2B88 - 2B8E
+00000446    syscall bool fileExists(char* pszArchiveFileName, char* pszFileName)
+00000448    jnz 00000931
+
+CD验证:
+000004EC    lea var5C4
+000004EF    syscall 80:66
+
+000004F1    jmp 00000B0B //jmp 00000946 0455
+
+CD验证：
+00000B31    lea var4
+00000B34    push 0
+00000B36    storepv dword
+00000B38    lea var4
+00000B3B    call sub_00000D6E //data06000.dat
+00000B3F    jnz 00000931
+
+00000B44    call sub_0000243B //FRS001
+00000B48    jz 00000931
+
+00000B4D    call sub_000021E7 //..\IMAIMOINIT.FL
+00000B51    jz 00000931
+
+00000B56    jmp 00000946
+
+inspctscndd：
+00000401    load dword
+00000403    push 1F
+00000405    ne
+00000406    jnz 00000931 //jz
