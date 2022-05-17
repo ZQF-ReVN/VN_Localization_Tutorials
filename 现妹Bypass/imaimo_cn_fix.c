@@ -58,19 +58,8 @@ INT APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 	DWORD my_ImageBase = GetImageBase();
 
-	//BYTE my_fix[] = { 0x11,0xD1 };
-	//WriteMemory((LPVOID)(my_ImageBase + 0x3489AE), my_fix, sizeof(my_fix));
-
 	BYTE write_Bytes[] = { 0x2A,0x00,0x2E,0x00,0x63,0x00,0x70,0x00,0x6B,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 };
 	WriteMemory((LPVOID)(my_ImageBase + 0x1EC0F6), write_Bytes, sizeof(write_Bytes));
-
-	//BYTE write_Bytes1[] = { 0x90,0x90 };
-	//WriteMemory((LPVOID)(my_ImageBase + 0x21FB8C), write_Bytes1, sizeof(write_Bytes1));
-
-	//BYTE read_Bytes[7] = {0};
-	//ReadMemory((LPCVOID)(my_ImageBase + 0x29366B), read_Bytes,sizeof(read_Bytes));
-
-	//CmpMemory(write_Bytes, read_Bytes, 7);
 
 	ResumeThread(pi.hThread);
 	CloseHandle(pi.hProcess);
