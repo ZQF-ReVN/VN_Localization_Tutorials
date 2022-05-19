@@ -30,7 +30,6 @@ BYTE keyPassCall[] = { 0xE8,0x7B,0x7F,0x06,0x00,0x90 };
 STARTUPINFOW si;
 PROCESS_INFORMATION pi;
 
-
 BOOL GetStart(LPCWSTR lpApplicationName)
 {
 	ZeroMemory(&si, sizeof(si));
@@ -75,7 +74,6 @@ VOID WriteMemory(LPVOID lpAddress, LPCVOID lpBuffer, SIZE_T nSize)
 	}
 }
 
-
 INT APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	if (!GetStart(L"いますぐお兄ちゃんに妹だっていいたい！.exe"))
@@ -84,26 +82,12 @@ INT APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	}
 
 	DWORD my_ImageBase = GetImageBase();
-
-	//BYTE my_fix[] = { 0xB8,0x01,0x00,0x00,0x00,0xC3 };
-	//WriteMemory((LPVOID)(my_ImageBase + 0x56C58), my_fix, sizeof(my_fix));
-
-
+	
 	WriteMemory((LPVOID)(my_ImageBase + 0x4E9F0), driveType, sizeof(driveType));
 	WriteMemory((LPVOID)(my_ImageBase + 0x1EC0F6), evb, sizeof(evb));
-	//WriteMemory((LPVOID)(my_ImageBase + 0x56C58), langPass, sizeof(langPass));
 	WriteMemory((LPVOID)(my_ImageBase + 0xAFC90), keyPass, sizeof(keyPass));
 	WriteMemory((LPVOID)(my_ImageBase + 0x47D10), keyPassCall, sizeof(keyPassCall));
-
-
-
-
-
-
-	//BYTE read_Bytes[7] = {0};
-	//ReadMemory((LPCVOID)(my_ImageBase + 0x29366B), read_Bytes,sizeof(read_Bytes));
-
-	//CmpMemory(write_Bytes, read_Bytes, 7);
+	
 
 	ResumeThread(pi.hThread);
 	CloseHandle(pi.hProcess);
