@@ -1,0 +1,6 @@
+HookFont.dll
+HookFont.exe
+HookFont.ini
+
+三个文件复制到游戏目录下
+打开INI文件进行配置
