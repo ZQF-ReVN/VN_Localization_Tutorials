@@ -1,0 +1,5 @@
+x64dbg                                                        https://github.com/x64dbg/x64dbg
+WinHex                                                        https://www.x-ways.net/winhex
+YurisTools                                                    https://github.com/Dir-A/YurisTools
+extYbn                                                        https://github.com/regomne/chinesize
+Enigma Virtual Box unpacker                                   https://lifeinhex.com/tag/enigma-virtual-box/
