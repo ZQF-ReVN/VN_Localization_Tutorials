@@ -1,0 +1,764 @@
+{
+    "game_title": "ティンクル☆くるせいだーすPSS PKG",
+    "game_version": "1.19",
+    "game_engine": "PJADV",
+    "export_time": "2024-01-09 01:18:45.700599",
+    "func_list": [
+        {
+            "name": "PAJ::VM::Stack::Get",
+            "addr": "0x401020"
+        },
+        {
+            "name": "PAJ::Dat::FileName::Get",
+            "addr": "0x4022f0"
+        },
+        {
+            "name": "PAJ::Dat::Textdata::Get",
+            "addr": "0x402310"
+        },
+        {
+            "name": "PAJ::Dat::Scenario::GetCodePtr",
+            "addr": "0x402330"
+        },
+        {
+            "name": "PAJ::Dat::Scenario::FindInChapter",
+            "addr": "0x402340"
+        },
+        {
+            "name": "PAJ::VM::Ctor",
+            "addr": "0x402380"
+        },
+        {
+            "name": "PAJ::CheckCtrlKey",
+            "addr": "0x4041c0"
+        },
+        {
+            "name": "PAJ::VM::404340",
+            "addr": "0x404340"
+        },
+        {
+            "name": "PAJ::Timer::Wait",
+            "addr": "0x405130"
+        },
+        {
+            "name": "PAJ::SetWindowFront",
+            "addr": "0x4053e0"
+        },
+        {
+            "name": "PAJ::VM::Dtor",
+            "addr": "0x405a70"
+        },
+        {
+            "name": "PAJ::VM::Dispatch",
+            "addr": "0x405e10"
+        },
+        {
+            "name": "PAJ::VM::418740",
+            "addr": "0x418740"
+        },
+        {
+            "name": "PAJ::VM::Execute",
+            "addr": "0x4192a0"
+        },
+        {
+            "name": "PAJ::INI::NextToken",
+            "addr": "0x419320"
+        },
+        {
+            "name": "PAJ::INI::GetValueStart",
+            "addr": "0x419380"
+        },
+        {
+            "name": "PAJ::INI::Skip",
+            "addr": "0x419400"
+        },
+        {
+            "name": "PAJ::INI::Skip_",
+            "addr": "0x419470"
+        },
+        {
+            "name": "PAJ::INI::GetType",
+            "addr": "0x4194a0"
+        },
+        {
+            "name": "PAJ::INI::ParseStr",
+            "addr": "0x419dc0"
+        },
+        {
+            "name": "PAJ::INI::ReadGameTitle",
+            "addr": "0x41bd50"
+        },
+        {
+            "name": "PAJ::STD::Str::Copy",
+            "addr": "0x41c210"
+        },
+        {
+            "name": "PAJ::STD::Str::Ctor_T0",
+            "addr": "0x41c2f0"
+        },
+        {
+            "name": "PAJ::STD::Str::Copy_T1",
+            "addr": "0x41c3c0"
+        },
+        {
+            "name": "PAJ::INI::List::SetValue",
+            "addr": "0x41c3f0"
+        },
+        {
+            "name": "PAJ::STD::Str::Ctor_T1",
+            "addr": "0x41c520"
+        },
+        {
+            "name": "PAJ::INI::List::AddSize",
+            "addr": "0x41c560"
+        },
+        {
+            "name": "PAJ::INI::List::Append",
+            "addr": "0x41c6a0"
+        },
+        {
+            "name": "PAJ::INI::Parse",
+            "addr": "0x41c740"
+        },
+        {
+            "name": "PAJ::ANM::Load",
+            "addr": "0x41d010"
+        },
+        {
+            "name": "PAJ::Str::Cmp",
+            "addr": "0x420560"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Dtor",
+            "addr": "0x4205f0"
+        },
+        {
+            "name": "PAJ::STD::Str::Cmp",
+            "addr": "0x420760"
+        },
+        {
+            "name": "PAJ::INI::List::NewNode",
+            "addr": "0x420910"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Map::NewHeader",
+            "addr": "0x420930"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Map::Tree::Find",
+            "addr": "0x420970"
+        },
+        {
+            "name": "PAJ::STD::Str::Dtor",
+            "addr": "0x420a00"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Key::Find",
+            "addr": "0x420a30"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Vector::Exception",
+            "addr": "0x420b60"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Vector::420C40",
+            "addr": "0x420c40"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Vector::Value::Free",
+            "addr": "0x420ca0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::FindPath_Imp",
+            "addr": "0x420ce0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::FindPath",
+            "addr": "0x420ed0"
+        },
+        {
+            "name": "PAJ::INI::List::Dtor",
+            "addr": "0x420f90"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Vector::Append::Direct",
+            "addr": "0x421330"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Map::Free",
+            "addr": "0x4215c0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Vector::Free",
+            "addr": "0x4219f0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::AddFileName",
+            "addr": "0x421bd0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Clear",
+            "addr": "0x422170"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Vector::Append::Realloc",
+            "addr": "0x4221e0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Vector::Append",
+            "addr": "0x4222e0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Ctor",
+            "addr": "0x422390"
+        },
+        {
+            "name": "PAJ::ArchiveManager::AddPackName",
+            "addr": "0x4224f0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::LoadPack",
+            "addr": "0x4225c0"
+        },
+        {
+            "name": "PAJ::ArchiveManager::Init",
+            "addr": "0x422710"
+        },
+        {
+            "name": "PAJ::DrawText_T2_Imp",
+            "addr": "0x4267c0"
+        },
+        {
+            "name": "PAJ::DrawText_T2",
+            "addr": "0x4268c0"
+        },
+        {
+            "name": "PAJ::Image::EPA::Init",
+            "addr": "0x42d420"
+        },
+        {
+            "name": "PAJ::EAP::Decompress",
+            "addr": "0x42d540"
+        },
+        {
+            "name": "PAJ::Font::D3D9::UpdateTexture",
+            "addr": "0x42f180"
+        },
+        {
+            "name": "PAJ::Font::Render::Get",
+            "addr": "0x42f240"
+        },
+        {
+            "name": "PAJ::CreateProcess",
+            "addr": "0x4318b0"
+        },
+        {
+            "name": "PAJ::OpenExplorerFile",
+            "addr": "0x431a20"
+        },
+        {
+            "name": "PAJ::OpenVolumeMixer",
+            "addr": "0x431aa0"
+        },
+        {
+            "name": "PAJ::ReStart",
+            "addr": "0x431ad0"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Map::NotSame",
+            "addr": "0x431d00"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Folder::Map::431F20",
+            "addr": "0x431f20"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Path::Map::NewHeader",
+            "addr": "0x431fb0"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Folder::Map::NewHeader",
+            "addr": "0x431ff0"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Tree::Find",
+            "addr": "0x432030"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Folder::Map::Find_",
+            "addr": "0x4320c0"
+        },
+        {
+            "name": "PAJ::STD::Str::Append",
+            "addr": "0x432150"
+        },
+        {
+            "name": "PAJ::STD::Str::Ctor_T3",
+            "addr": "0x432250"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Key::Find",
+            "addr": "0x432390"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Folder::Map::Find",
+            "addr": "0x432490"
+        },
+        {
+            "name": "PAJ::STD::Str::Ctor_T2",
+            "addr": "0x432590"
+        },
+        {
+            "name": "PAJ::STD::Str::Append_T0",
+            "addr": "0x432960"
+        },
+        {
+            "name": "PAJ::STD::Str::Merge",
+            "addr": "0x432a20"
+        },
+        {
+            "name": "PAJ::STD::Str::ToUpper",
+            "addr": "0x432ae0"
+        },
+        {
+            "name": "PAJ::DirectoryManager::FindPath",
+            "addr": "0x432bd0"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Folder::Map::Free",
+            "addr": "0x432d70"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Folder::Map::Insert",
+            "addr": "0x433380"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Path::Map::Free",
+            "addr": "0x4334b0"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Folder::Map::MakeTree",
+            "addr": "0x433730"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Path::Map::MakeTree",
+            "addr": "0x433930"
+        },
+        {
+            "name": "PAJ::DirectoryManager::AddPath",
+            "addr": "0x433a00"
+        },
+        {
+            "name": "PAJ::DirectoryManager::AddFolder",
+            "addr": "0x433ef0"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Dtor",
+            "addr": "0x434120"
+        },
+        {
+            "name": "PAJ::DirectoryManager::Ctor",
+            "addr": "0x434210"
+        },
+        {
+            "name": "PAJ::InitializeCriticalSection",
+            "addr": "0x434340"
+        },
+        {
+            "name": "PAJ::VFS::Pack::ReadEntry",
+            "addr": "0x434360"
+        },
+        {
+            "name": "PAJ::VFS::ReadData",
+            "addr": "0x434560"
+        },
+        {
+            "name": "PAJ::VFS::ReadViaSize",
+            "addr": "0x434590"
+        },
+        {
+            "name": "PAJ::VFS::GetSize",
+            "addr": "0x4345e0"
+        },
+        {
+            "name": "PAJ::VFS::Wait::ReadFinish",
+            "addr": "0x4345f0"
+        },
+        {
+            "name": "PAJ::VFS::Dtor",
+            "addr": "0x434630"
+        },
+        {
+            "name": "PAJ::Save::WriteData",
+            "addr": "0x4347a0"
+        },
+        {
+            "name": "PAJ::OpenSysSaveData",
+            "addr": "0x434840"
+        },
+        {
+            "name": "PAJ::VFS::Open",
+            "addr": "0x434a20"
+        },
+        {
+            "name": "PAJ::OpenFile",
+            "addr": "0x434af0"
+        },
+        {
+            "name": "PAJ::Paint",
+            "addr": "0x435b90"
+        },
+        {
+            "name": "PAJ::Image::Coder",
+            "addr": "0x445440"
+        },
+        {
+            "name": "PAJ::Dat::Graphic::Dtor",
+            "addr": "0x446ce0"
+        },
+        {
+            "name": "PAJ::Dat::Graphic::Ctor",
+            "addr": "0x446d30"
+        },
+        {
+            "name": "PAJ::DEF::Load",
+            "addr": "0x446da0"
+        },
+        {
+            "name": "PAJ::Dat::Graphic::Load",
+            "addr": "0x446f40"
+        },
+        {
+            "name": "PAJ::Image::Load",
+            "addr": "0x447050"
+        },
+        {
+            "name": "PAJ::Font::Cache::Dtor_",
+            "addr": "0x44a1b0"
+        },
+        {
+            "name": "PAJ::DrawChar",
+            "addr": "0x45c950"
+        },
+        {
+            "name": "PAJ::DrawString",
+            "addr": "0x45cc10"
+        },
+        {
+            "name": "PAJ::Exception",
+            "addr": "0x460ec0"
+        },
+        {
+            "name": "PAJ::WndProc",
+            "addr": "0x461110"
+        },
+        {
+            "name": "PAJ::VFS::Decode",
+            "addr": "0x462700"
+        },
+        {
+            "name": "PAJ::DrawText::MsgBox_T1_Imp",
+            "addr": "0x463ff0"
+        },
+        {
+            "name": "PAJ::DrawText_T1_Imp",
+            "addr": "0x464110"
+        },
+        {
+            "name": "PAJ::Font::Select",
+            "addr": "0x464220"
+        },
+        {
+            "name": "PAJ::DrawText::MsgBox_T1",
+            "addr": "0x464930"
+        },
+        {
+            "name": "PAJ::DrawText_T1",
+            "addr": "0x464960"
+        },
+        {
+            "name": "PAJ::OpenMovie",
+            "addr": "0x466350"
+        },
+        {
+            "name": "PAJ::Font::Select_",
+            "addr": "0x467840"
+        },
+        {
+            "name": "PAJ::Font::SetIndex",
+            "addr": "0x470fa0"
+        },
+        {
+            "name": "PAJ::ReadWindowTitleStr",
+            "addr": "0x486380"
+        },
+        {
+            "name": "PAJ::Save::Path::Init",
+            "addr": "0x4864a0"
+        },
+        {
+            "name": "PAJ::VM::Dtor::SysDat::Free",
+            "addr": "0x486840"
+        },
+        {
+            "name": "PAJ::Save::GenName",
+            "addr": "0x486a00"
+        },
+        {
+            "name": "PAJ::Save::Check",
+            "addr": "0x486c50"
+        },
+        {
+            "name": "PAJ::Save::GetTime",
+            "addr": "0x487180"
+        },
+        {
+            "name": "PAJ::Save::Read_",
+            "addr": "0x487240"
+        },
+        {
+            "name": "PAJ::Save::Copy",
+            "addr": "0x4873f0"
+        },
+        {
+            "name": "PAJ::Save::Delete",
+            "addr": "0x4874b0"
+        },
+        {
+            "name": "PAJ::VM::Load",
+            "addr": "0x488a80"
+        },
+        {
+            "name": "PAJ::Save::Write",
+            "addr": "0x4896d0"
+        },
+        {
+            "name": "PAJ::Save::Load",
+            "addr": "0x4897b0"
+        },
+        {
+            "name": "PAJ::Save::Read",
+            "addr": "0x489d40"
+        },
+        {
+            "name": "PAJ::DrawChar_T0",
+            "addr": "0x489e20"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::48A050",
+            "addr": "0x48a050"
+        },
+        {
+            "name": "PAJ::Str::CheckRange",
+            "addr": "0x48a0b0"
+        },
+        {
+            "name": "PAJ::Font::Create",
+            "addr": "0x48a0e0"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::Global::Create",
+            "addr": "0x48a1e0"
+        },
+        {
+            "name": "PAJ::Font::GDI::Dtor",
+            "addr": "0x48a260"
+        },
+        {
+            "name": "PAJ::Font::GDI::GetGlyphData",
+            "addr": "0x48a2a0"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::List::Get",
+            "addr": "0x48a440"
+        },
+        {
+            "name": "PAJ::Font::ReCreate",
+            "addr": "0x48a470"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::48A4F0",
+            "addr": "0x48a4f0"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::List::48AF20",
+            "addr": "0x48af20"
+        },
+        {
+            "name": "PAJ::Font::FontData::File::Ctor",
+            "addr": "0x48b620"
+        },
+        {
+            "name": "PAJ::Font::FontData::Free",
+            "addr": "0x48b630"
+        },
+        {
+            "name": "PAJ::Font::FontData::File::Read",
+            "addr": "0x48b690"
+        },
+        {
+            "name": "PAJ::Font::FontData::NewNode",
+            "addr": "0x48b7b0"
+        },
+        {
+            "name": "PAJ::Font::FontData::GetGlyphPtr",
+            "addr": "0x48b7e0"
+        },
+        {
+            "name": "PAJ::Font::FontData::Load",
+            "addr": "0x48b810"
+        },
+        {
+            "name": "PAJ::Font::FontData::GetGlyph",
+            "addr": "0x48b8e0"
+        },
+        {
+            "name": "PAJ::Font::FontData::FontExist",
+            "addr": "0x48b9a0"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::Create",
+            "addr": "0x48ba30"
+        },
+        {
+            "name": "PAJ::DrawText_T0",
+            "addr": "0x48c9b0"
+        },
+        {
+            "name": "PAJ::Font::FontData::Dtor",
+            "addr": "0x48da20"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::Free",
+            "addr": "0x48dbe0"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::List::Set",
+            "addr": "0x48dd30"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::List::Node::Free",
+            "addr": "0x48ddc0"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::List::Free",
+            "addr": "0x48de70"
+        },
+        {
+            "name": "PAJ::Font::RenderTarget::List::Clear",
+            "addr": "0x48dea0"
+        },
+        {
+            "name": "PAJ::Font::Dtor_",
+            "addr": "0x48e0b0"
+        },
+        {
+            "name": "PAJ::Font::Ctor",
+            "addr": "0x48e100"
+        },
+        {
+            "name": "PAJ::Font::Cache0::Alloc",
+            "addr": "0x48e180"
+        },
+        {
+            "name": "PAJ::Font::Cache0::Mem::Free",
+            "addr": "0x48e1d0"
+        },
+        {
+            "name": "PAJ::Font::GDI::MakeGlyph",
+            "addr": "0x48e2d0"
+        },
+        {
+            "name": "PAJ::Font::FontData::MakeGlyph",
+            "addr": "0x48e410"
+        },
+        {
+            "name": "PAJ::Font::Dtor",
+            "addr": "0x48e760"
+        },
+        {
+            "name": "PAJ::Font::Render",
+            "addr": "0x48e960"
+        },
+        {
+            "name": "PAJ::Font::Cache0::Mem::Dtor",
+            "addr": "0x48f5d0"
+        },
+        {
+            "name": "PAJ::Font::FontData::Draw",
+            "addr": "0x48fa60"
+        },
+        {
+            "name": "PAJ::DrawChar_T1_Imp",
+            "addr": "0x48fbf0"
+        },
+        {
+            "name": "PAJ::Font::Cache0::Dtor",
+            "addr": "0x48fda0"
+        },
+        {
+            "name": "PAJ::DrawChar_T1",
+            "addr": "0x48fdc0"
+        },
+        {
+            "name": "PAJ::Font::Cache0::Init",
+            "addr": "0x48fe60"
+        },
+        {
+            "name": "PAJ::DrawChar_T2_Imp",
+            "addr": "0x48ff20"
+        },
+        {
+            "name": "PAJ::Font::Cache1::Mem::Free",
+            "addr": "0x4900e0"
+        },
+        {
+            "name": "PAJ::Font::Cache1::Dtor",
+            "addr": "0x490650"
+        },
+        {
+            "name": "PAJ::DrawChar_T2",
+            "addr": "0x490670"
+        },
+        {
+            "name": "PAJ::Font::Cache1::Int",
+            "addr": "0x490760"
+        },
+        {
+            "name": "PAJ::Timer::Init",
+            "addr": "0x490790"
+        },
+        {
+            "name": "PAJ::Timer::4907C0",
+            "addr": "0x4907c0"
+        },
+        {
+            "name": "PAJ::Timer::4907D0",
+            "addr": "0x4907d0"
+        },
+        {
+            "name": "PAJ::Timer::Get",
+            "addr": "0x4907e0"
+        },
+        {
+            "name": "PAJ::Timer::490840",
+            "addr": "0x490840"
+        },
+        {
+            "name": "PAJ::Timer::490850",
+            "addr": "0x490850"
+        },
+        {
+            "name": "PAJ::Timer::4908A0",
+            "addr": "0x4908a0"
+        },
+        {
+            "name": "PAJ::Timer::4908F0",
+            "addr": "0x4908f0"
+        },
+        {
+            "name": "PAJ::GetTextXX",
+            "addr": "0x4bc080"
+        }
+    ]
+}
